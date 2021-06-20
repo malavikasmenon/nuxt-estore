@@ -38,4 +38,6 @@ export default {
             baseURL: "https://fakestoreapi.com/img/",
         },
     },
+
+    target: 'static'
 }

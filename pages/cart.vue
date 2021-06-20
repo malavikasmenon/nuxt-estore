@@ -62,12 +62,12 @@ html, body {
     margin: 50px;
 }
 
-/* .link {
+.link {
     text-decoration: none;
     color: #3b8070;
 }
 
-ul {
+/* ul {
     list-style: none;
     margin-top: 30px;
 }

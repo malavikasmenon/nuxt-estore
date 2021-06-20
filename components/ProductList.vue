@@ -3,9 +3,10 @@
          <div>
             <ul class="flex-container">
                 <li class="flex-item" v-for="prod in products" :key="prod.id" >
+                        <img :src="prod[0].image" class="prod-image">
                         <h4>{{prod[0].title}}</h4>
                         <h3> Rs. {{prod[0].price}}</h3>
-                        <p> {{prod[0].description}} </p>
+                        <!-- <p> {{prod[0].description}} </p> -->
                         <br/>
                         <small class="prod-category">{{prod[0].category}}</small>
                 </li>
@@ -51,6 +52,13 @@
     padding: 5px;
     width: 80px;
     margin-top: 50px;
+}
+
+.prod-image {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: auto;
 }
 
 </style>

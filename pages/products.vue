@@ -6,24 +6,26 @@
           rel="noopener noreferrer"
           class="button--grey"
         >
-          <h2> Cart {{cart.length}} </h2>
+          <h2> Cart ({{cart.length}}) </h2>
         </NuxtLink>
         
         <div>
             <ul class="flex-container">
                 <li class="flex-item" v-for="prod in products" :key="prod.id" >
+                        <img :src="prod.image" class="prod-image">
                         <h4>{{prod.title}}</h4>
                         <h3> Rs. {{prod.price}}</h3>
-                        <p> {{prod.description}} </p>
+                        <!-- <p> {{prod.description}} </p> -->
                         <br/>
                         <small class="prod-category">{{prod.category}}</small>
-                        <button class="button-green" :key="prod.id" @click="addToCart(prod.id) ">Add to cart</button>
+                        <button class="button-green" :key="prod.id" @click="addToCart(prod.id)">Add to cart</button>
                 </li>
             </ul>
         </div>
 
-        <!-- Products
-        <div>
+
+        <!-- <div>
+            <h3> New Products </h3>
             <ul v-for="prod in newData" :key="prod.id">
                 <li>
                     <h3>{{prod.title}}</h3>
@@ -78,6 +80,14 @@
   min-height: 100vh;
   display: inline;
 }
+.prod-image {
+  height: 70%;
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+
+}
 .heading {
     font-size: 1.5em;
     font-weight: 300;
@@ -109,4 +119,25 @@
     width: 80px;
     margin-top: 50px;
 }
+
+.button--grey{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.button-green{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(42, 42, 80);
+    border: 1px solid rgb(42, 42, 80);
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 </style>

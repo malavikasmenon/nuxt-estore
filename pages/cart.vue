@@ -53,7 +53,7 @@ html, body {
     margin-top: 60px;
 }
 
-/* .button-grey {
+.button-grey {
     padding: 10px;
     background-color: white;
     border: 2px solid #3b8070;
@@ -62,7 +62,7 @@ html, body {
     margin: 50px;
 }
 
-.link {
+/* .link {
     text-decoration: none;
     color: #3b8070;
 }
@@ -81,11 +81,11 @@ ul {
 
 } */
 
-.button-green {
+/* .button-green {
     background-color: #3b8070;
     color: white;
     padding: 5px;
     border-radius: 5px;
     margin-top: 10px;
-}
+} */ 
 </style>
